@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    header, main, footer {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 8px;
+      margin-top: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    ul {
+      list-style-type: square;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>User Information and Survey Form</h1>
+    <p>Please fill out the form below. All required fields must be completed before submission.</p>
+  </header>
+
+  <main>
+    <!-- Media and List Section -->
+    <section>
+      <h2>Why Fill This Form?</h2>
+      <ul>
+        <li>To improve user experience</li>
+        <li>To personalize content</li>
+        <li>To provide better support</li>
+      </ul>
+
+      <h2>Sample Media</h2>
+      
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Available Plans</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price</th>
+            <th>Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>Free</td>
+            <td>Email support</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>$9.99/mo</td>
+            <td>Priority support, Extra storage</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required autocomplete="name">
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a strong password" autocomplete="new-password">
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Please choose--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+
+        <label for="readonlyField">Account ID (Read-only)</label>
+        <input type="text" id="readonlyField" name="account_id" value="ACCT-123456" readonly>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions *
+        </label>
+
+        <label>
+          <input type="radio" name="newsletter" value="yes" required>
+          Subscribe to newsletter
+        </label>
+        <label>
+          <input type="radio" name="newsletter" value="no" required>
+          Do not subscribe
+        </label>
+
+        <button type="submit" style="margin-top: 20px;">Submit Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
